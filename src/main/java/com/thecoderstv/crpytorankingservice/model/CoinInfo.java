@@ -1,8 +1,11 @@
 package com.thecoderstv.crpytorankingservice.model;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
 public class CoinInfo {
     private String uuid;
     private String symbol;

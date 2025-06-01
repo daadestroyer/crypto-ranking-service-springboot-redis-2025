@@ -22,15 +22,19 @@ public class RedisConfig {
         return config;
     }
     // We need object of RedisTimeSeries and RedisJSON
+    @Bean
     public RedisTimeSeriesClient redisTimeSeriesClient(Config config) {
         return new RedisTimeSeriesClient(config);
     }
+    @Bean
     public RedisTimeSeries redisTimeSeries(RedisTimeSeriesClient redisTimeSeriesClient) {
         return redisTimeSeriesClient.getRedisTimeSeries();
     }
+    @Bean
     public RedisJSONClient redisJSONClient(Config config) {
         return new RedisJSONClient(config);
     }
+    @Bean
     public RedisJSON redisJSON(RedisJSONClient redisJSONClient) {
         return redisJSONClient.getRedisJSON();
     }
