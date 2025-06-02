@@ -14,6 +14,7 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
-        coinsDataService.fetchCoinsData();
+//         coinsDataService.fetchCoinsData();
+//         coinsDataService.fetchCoinHistory();
     }
 }
