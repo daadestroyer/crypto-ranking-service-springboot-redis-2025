@@ -10,8 +10,8 @@
 ![img_4.png](img_4.png)
 ![img_5.png](img_5.png)
 
-Backend Code running at : localhost:1001
-UI Code running at : localhost:3000
+1. Backend Code running at : localhost:1001
+2. UI Code running at : localhost:3000
 
 ### 3. Create a project
 
@@ -19,7 +19,15 @@ UI Code running at : localhost:3000
 ![img_7.png](img_7.png)
 
 ### 4. Docker commands
-![img_8.png](img_8.png)
+###### first time
+```
+docker run -d --name redis-stack-server -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+```
+###### second time
+```
+docker run redis-stack-server    
+```
+
 
 ### 5. Some redis-insight commands 
 ![img_9.png](img_9.png)
